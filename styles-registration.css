@@ -1,0 +1,560 @@
+@media print
+{
+    .status_info, .save_controls
+    {
+        height: 1px;
+        visibility: hidden;
+    }
+}
+body
+{
+    background: #EBEBEB !important;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #666;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.right
+{
+    float: right;
+}
+.left
+{
+    float: left;
+}
+img
+{
+    border: none;
+}
+ul, li
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+form
+{
+    margin: 0;
+    padding: 0;
+}
+a
+{
+    color: #0088B5;
+    font-weight: bold;
+}
+a:hover
+{
+    color: #0078A0;
+}
+#container
+{
+    width: 960px;
+    padding: 0;
+    -moz-border-radius: 13px;
+    background: #fff;
+    border: 1px solid #ccc;
+    overflow: hidden !important;
+    margin: 10px auto;
+    overflow: auto;
+}
+#content
+{
+    padding: 15px;
+    width: 930px;
+    overflow: auto;
+}
+#content h1, #content h2, #content h3, #content h4
+{
+    color: #008DBC;
+    font-size: medium;
+}
+#content h1
+{
+    font-size: 22px;
+}
+#content ul, #content ul li
+{
+    margin: 0;
+    padding: 0;
+}
+#header
+{
+    background: #fff !important;
+    height: 120px;
+}
+.logo
+{
+    margin: 5px;
+    float: left;
+}
+ul#toplinks
+{
+    float: right;
+    color: #999;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ul#toplinks li
+{
+    float: right;
+    margin: 3px 0 0 10px;
+}
+ul#toplinks a
+{
+    color: #999;
+    font-weight: normal;
+}
+ul#toplinks a:hover
+{
+    color: #666;
+    font-weight: normal;
+}
+#nav
+{
+    padding-left: 20px;
+    background: #008DBC;
+    color: #fff;
+    clear:both;
+}
+    #nav ul {
+        margin:0; padding:0;
+    }
+#nav li
+{
+    margin:0; padding:0;
+    display: inline-block;
+}
+#nav li a
+{
+    padding:8px 15px;
+    display:block;
+    color: #fff;
+    font-size:14px;
+    text-decoration: none;
+}
+#nav li a:hover
+{
+    background: #00779E;
+}
+#footer
+{
+    text-align: center;
+    margin: 10px auto 0 auto;
+    padding-bottom: 15px;
+    clear: both;
+    background: #008DBC !important;
+    color: #fff !important;
+}
+#footer a
+{
+    color: #999;
+    font-weight: normal;
+}
+#topbox
+{
+    width: 890px;
+    padding: 20px;
+    -moz-border-radius: 10px;
+    background: #00ACE6 url(../images/registration-bg_fptopbox.png) repeat-x bottom;
+    overflow: auto;
+    color: #fff;
+}
+#topbox h4
+{
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: -1px;
+    margin: 0;
+    padding: 0 0 5px 0;
+}
+#topbox input
+{
+    border: 1px solid #0093C4;
+    padding: 3px 3px;
+    width: 230px;
+}
+#topbox select
+{
+    margin-left: 3px;
+}
+#topbox .btn
+{
+    padding: 3px 5px;
+    background: #004055;
+    color: #fff;
+    border: none;
+    -moz-border-radius: 3px;
+    position: absolute;
+    margin-left: 5px;
+    cursor: pointer;
+    width: 60px;
+    font-size: 11px;
+}
+#topbox .btn:hover
+{
+    background: #005773;
+}
+#tbleft
+{
+    float: left;
+    width: 450px;
+    padding: 15px 0 0 10px;
+}
+#tbleft .tld
+{
+    width: 75px;
+}
+#tbright
+{
+    font-size: 12px;
+    float: right;
+    width: 390px;
+    border-left: 1px solid #00ACE5;
+    padding-left: 15px;
+}
+#tbright #boxleft
+{
+    float: left;
+    width: 225px;
+}
+#tbright input
+{
+    width: 145px;
+    margin: 5px 0 0 5px;
+}
+#tbright p
+{
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+#tbright p.link
+{
+    float: left;
+    margin: 13px 0 0 10px;
+    font-size: 11px;
+    padding: 0;
+}
+#tbright a
+{
+    color: #fff;
+    text-decoration: underline;
+}
+ul#promobox
+{
+    width: 930px;
+    position: relative;
+    float: left;
+    margin-left: 15px;
+    margin-bottom: 45px;
+    margin-top: 30px;
+}
+ul#promobox p
+{
+    margin: 0;
+    padding: 0;
+}
+ul#promobox li
+{
+    width: 270px;
+    padding: 20px 10px 20px 20px;
+    float: left;
+    background: #008DBC url(../images/registration-bg_promo1.png) repeat-x bottom;
+    margin: 15px 15px 0 0;
+    -moz-border-radius: 10px;
+    color: #fff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+ul#promobox ul
+{
+    margin: 0 0 10px 0;
+}
+ul#promobox li ul li
+{
+    margin: 5px 0 0 0;
+    background: url("../images/registration-bullet.png") no-repeat scroll 1px 6px rgba(0, 0, 0, 0);
+    padding: 0 0 0 10px;
+    width: 250px;
+}
+ul#promobox li h3
+{
+    line-height: 1;
+    color: #fff;
+    letter-spacing: -1px;
+    font-size: 25px;
+    float: left;
+    margin: 0;
+    padding: 0 0 3px 0;
+}
+ul#promobox li .pricebox
+{
+    line-height: 1;
+    float: right;
+    text-align: center;
+    padding-right: 10px;
+}
+ul#promobox li .pricebox .lrg
+{
+    line-height: 1;
+    letter-spacing: -1px;
+    font-size: 35px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+button.home_btn
+{
+    border: none;
+    background: #004055;
+    color: #fff;
+    float: left;
+    margin: 15px 10px 0 0;
+    padding: 5px 10px;
+    text-decoration: none;
+    -moz-border-radius: 5px;
+    font-weight: normal;
+}
+ul#promobox button, ul#promobox a
+{
+    background: #004055;
+    color: #fff;
+    float: left;
+    margin: 15px 10px 0 0;
+    padding: 5px 10px;
+    text-decoration: none;
+    -moz-border-radius: 5px;
+    font-weight: normal;
+}
+ul#promobox a:hover, ul#promobox button:hover
+{
+    background: #005773;
+}
+ul#promobox li.two
+{
+    background: #00ACE6 url(../images/registration-bg_promo2.png) repeat-x bottom;
+}
+ul#promobox li.three
+{
+    margin-right: 0;
+    background: #09C1FF url(../images/registration-bg_promo3.png) repeat-x bottom;
+}
+#newsbox
+{
+    width: 575px;
+    padding: 20px;
+    background: #f7f7f7;
+    float: left;
+    -moz-border-radius: 10px;
+}
+#newsbox p
+{
+    margin: 0;
+    padding: 0;
+}
+#newsbox h5
+{
+    font-size: 25px;
+    letter-spacing: -1px;
+    color: #006C91;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+#newsbox h6 a
+{
+    font-size: 14px;
+    letter-spacing: -1px;
+    color: #006C91;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+#newsbox h6
+{
+    margin-bottom: 2px;
+    padding: 0;
+    line-height: 1;
+}
+#newsbox li
+{
+    margin-top: 15px;
+    line-height: 1.5em;
+}
+#newsbox .rss a
+{
+    float: right;
+    margin: 3px 8px 0 0;
+    color: #999;
+    font-weight: normal;
+}
+#quotes
+{
+    width: 260px;
+    padding: 20px;
+    float: right;
+    background: #09C1FF url(../images/registration-bg_promo3.png) repeat-x bottom;
+    -moz-border-radius: 10px;
+    color: #fff;
+}
+#quotes p
+{
+    margin: 0;
+    padding: 0;
+}
+#quotes h3
+{
+    line-height: 1;
+    letter-spacing: -1px;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+}
+#quotes li
+{
+    margin-top: 17px;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+#quotes a
+{
+    float: left;
+    color: #fff;
+    padding: 0;
+    margin-top: 15px;
+}
+/**
+add for ioe */
+#logo_text
+{
+    float: left;
+    width: 500px;
+    margin: 22px 0 0 0;
+}
+#logo_text h3
+{
+    font-size: 18px;
+    line-height: 20px;
+    margin: 0;
+    padding: 3px;
+    color: #008DBC;
+}
+table.table_grid
+{
+    border-top: 1px solid #777;
+    border-right: 1px solid #777;
+}
+table.table_grid td, table.table_grid th
+{
+    border-bottom: 1px solid #777;
+    border-left: 1px solid #777;
+}
+/** bootstrap overwrite*/
+textarea, select, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input
+{
+    border: 1px solid #31B6E2;
+}
+legend
+{
+    color: #008DBC;
+    border-bottom: 1px solid #008DBC;
+}
+.form-horizontal .control-label
+{
+    text-align: left;
+    padding-left: 15px;
+}
+.dateicon button
+{
+    border: none;
+}
+.label-success, .label-important
+{
+    color: #fff;
+    padding: 2px;
+}
+
+.highlight-green
+{
+    background: #468847 !important;
+    border: none !important;
+}
+.highlight-green a
+{
+    color: #fff !important;
+    border: none !important;
+    font-weight: bold !important;
+}
+.highlight-green a:hover
+{
+    border: 1px solid #2C682C;
+}
+.highlight-green .ui-state-default{
+    background: none !important;
+}
+
+
+.highlight-red
+{
+    background: #B94A48 !important;
+    border: none !important;
+}
+.highlight-red a
+{
+    color: #fff !important;
+    border: none !important;
+    font-weight: bold !important;
+}
+.highlight-red a:hover
+{
+    border: 1px solid #B94A48;
+}
+.highlight-red .ui-state-default{
+    background: none !important;
+    color: #fff !important;
+    border: none !important;
+    font-weight: bold !important;
+}
+
+.highlight-red.ui-state-disabled{
+    opacity:100;
+    
+}
+
+fieldset h4, fieldset h5
+{
+    padding: 5px 0;
+    margin-bottom: 15px;
+    color: #008DBC;
+    border-bottom: 1px solid #008DBC;
+}
+.controls-row label
+{
+    padding-top: 4px;
+}
+.label
+{
+    padding: 5px;
+    margin-top: 2px;
+}
+.label input
+{
+    padding: 2px;
+    margin-top: 0;
+}
+img#cap
+{
+    border: 1px solid #333;
+}
+
+.required
+{
+    color: Red;
+}
