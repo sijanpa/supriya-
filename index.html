@@ -1,30 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Entrance Examination Board</title>
-    <link href="css/base-jqueryui" rel="stylesheet">
 
-    <link href="css/bootstrap-bootstrapui" rel="stylesheet">
-
-    <link href="css/Flat-UI-flatui" rel="stylesheet">
-
-    <link href="css/styles-stylesui" rel="stylesheet">
-
+    <!-- CSS Links -->
+    <link href="css/base-jqueryui.css" rel="stylesheet">
+    <link href="css/bootstrap-bootstrapui.css" rel="stylesheet">
+    <link href="css/Flat-UI-flatui.css" rel="stylesheet">
+    <link href="css/styles-stylesui.css" rel="stylesheet">
     <link href="css/styles-registration.css" rel="stylesheet">
 
+    <!-- JavaScript Links -->
+    <script src="/bundles/jquery.js"></script>
+    <script src="/bundles/jqueryui.js"></script>
+    <script src="/bundles/jqueryval.js"></script>
+    <script src="/bundles/bootstrap.js"></script>
+    <script src="/bundles/common.js"></script>
 
-    <script src="/bundles/jquery?v=HoQe_TdSCUvPhQmA2_zGwH8A1cwb5cLfRwdtNK-K9_g1"></script>
-
-    <script src="/bundles/jqueryui?v=H5JR8C7P6LOCtPw8V_YAwOjYqjMVkDN7dk4N9v-ab7Q1"></script>
-
-    <script src="/bundles/jqueryval?v=2ghtVqCM8JIEPGxCuZopth4zGa5gMbhnh7aDTCdn_Mw1"></script>
-
-    <script src="/bundles/bootstrap?v=_YSpHlziY6TSNmvPOvyB68KHRbGk58cfYXu6SEDowX81"></script>
-
-    <script src="/bundles/common?v=25wCXJwdptVF1e3lFs9KKfnm1vpp2UqvTq8vXyy5QCY1"></script>
-
-    
     <script type="text/javascript">
         $(function () {
             $(".calendar").datepicker({
@@ -37,227 +31,128 @@
     <div id="container">
         <div id="header">
             <a href="entrance.ioe.edu.html">
-                <img src="images/images-tulogo.gif" alt="" style="height:110px" class="logo">
+                <img src="images/images-tulogo.gif" alt="TU Logo" style="height:110px" class="logo">
             </a>
             <div id="logo_text">
-                <h3>
-                    Tribhuvan University
-                </h3>
-                <h3>
-                    Institute of Engineering
-                </h3>
-                <h3>
-                    Entrance Examination Board
-                </h3>
+                <h3>Tribhuvan University</h3>
+                <h3>Institute of Engineering</h3>
+                <h3>Entrance Examination Board</h3>
             </div>
             <ul id="toplinks"></ul>
         </div>
+
         <div id="nav">
-                <ul>
-                    <li><a href="entrance.ioe.edu.html">Home</a></li>
-                    <li>
-                        <a href="RegistrationBankInformation.html">
-                            Payment Information
-                        </a>
-                    </li>
-                    <li>
-                        <a href="RegistrationNotice.html">
-                            Regisration
-                            Notice
-                        </a>
-                    </li>
-                    <li>
-                        <a href="RegistrationImageInstructions.html">
-                            Image Instruction
-                        </a>
-                    </li>
-                    <li>
-                        <a href="RegistrationInstructions.html">
-                            Registration Instruction
-                        </a>
-                    </li>
-                    <li>
-                        <a href="Notice.html">Notice</a>
-                    </li>
-                    <li><a href="AboutUs.html">About Us</a></li>
-                </ul>
+            <ul>
+                <li><a href="entrance.ioe.edu.html">Home</a></li>
+                <li><a href="RegistrationBankInformation.html">Payment Information</a></li>
+                <li><a href="RegistrationNotice.html">Registration Notice</a></li>
+                <li><a href="RegistrationImageInstructions.html">Image Instruction</a></li>
+                <li><a href="RegistrationInstructions.html">Registration Instruction</a></li>
+                <li><a href="Notice.html">Notice</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+            </ul>
         </div>
 
-        
-<form method="post" id="frm">
-    <div class="row">
-        <ul id="promobox">
-            <li>
-                <h3>Student Registration</h3>
-                <ul>
-                    <li>You can register for  Entrance Examination after receiving bank voucher. Before starting the registration procedure, please read all the notices published below carefully.</li>
-                </ul>
-               
-            </li>
-            <li class="two">
-                <h3>Registration Status</h3>
-                <ul>
+        <form method="post" id="frm">
+            <div class="row">
+                <ul id="promobox">
                     <li>
-                        You can review your registration status after successful submission of registration
-                        form.
+                        <h3>Student Registration</h3>
+                        <ul>
+                            <li>You can register for the Entrance Examination after receiving the bank voucher. Before starting the registration procedure, please read all the notices published below carefully.</li>
+                        </ul>
+                    </li>
+                    <li class="two">
+                        <h3>Registration Status</h3>
+                        <ul>
+                            <li>You can review your registration status after successful submission of the registration form.</li>
+                        </ul>
+                        <p>
+                            <a href="Review.html" class="btn btn-primary">Review your Registration Status</a>
+                        </p>
+                    </li>
+                    <li class="three">
+                        <h3>Score Card</h3>
+                        <ul>
+                            <li>You can print your Score Card by clicking the button below. Score Card will be available only till 28th Mangsir 2081.</li>
+                        </ul>
+                        <p>
+                            <a href="PrintIDCard.html" class="btn btn-primary">Print Your Score Card</a>
+                        </p>
                     </li>
                 </ul>
-                <p>
-                    <a href="Review.html" class="btn btn-primary ">Review your Registration Status</a>
-                </p>
-            </li>
-
-            
-           <li class="three">
-                <h3>Score Card</h3>
-                <ul>
-                    <li>You can print your Score Card by clicking the button below. Score Card will be available only till 28th Mangsir 2081. </li>
-                </ul>
-               <p>
-                    <a href="PrintIDCard.html" class="btn btn-primary">Print Your Score Card </a>
-                </p>
-
-            </li> 
-        </ul>
-    </div>
-   
-<div class="row alert alert-info">
-		<img src="images/images-BENotice_2081.jpg" alt="">        
-
-    </div>
-
-    <div class="" style="padding:0 15px;">
-
-        <div class="panel panel-primary">
-            <div class="panel-heading">
-                <h2 class="panel-title">
-                    Recent Notices
-                </h2>
             </div>
-            <div class="panel-body">
-                (<a href="Notice.html">View All Notices</a>)
-                <hr>
+
+            <div class="row alert alert-info">
+                <img src="images/images-BENotice_2081.jpg" alt="Notice Image">
+            </div>
+
+            <div style="padding:0 15px;">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h2 class="panel-title">Recent Notices</h2>
+                    </div>
+                    <div class="panel-body">
+                        (<a href="Notice.html">View All Notices</a>)
+                        <hr>
                         <table class="table table-bordered">
                             <thead>
                                 <tr>
-                                    <th>
-                                        S.No.
-                                    </th>
-                                    <th>
-                                        Title
-                                    </th>
-                                    <th>
-                                        Published Date
-                                    </th>
-                                    <th>
-
-                                    </th>
+                                    <th>S.No.</th>
+                                    <th>Title</th>
+                                    <th>Published Date</th>
+                                    <th></th>
                                 </tr>
                             </thead>
                             <tbody>
-                            <tr>
-                                <td>
-                                    1
-                                </td>
-                                <td>
-                                    BE/BArch. Entrance Result 2081
-                                </td>
-                                <td>
-                                    09/07/2024
-                                </td>
-                                <td>
-                                    <a href="5121.html" target="_blank">View Full Notice</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    2
-                                </td>
-                                <td>
-                                    Result Foreign Students 2081
-                                </td>
-                                <td>
-                                    09/07/2024
-                                </td>
-                                <td>
-                                    <a href="5122.html" target="_blank">View Full Notice</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    3
-                                </td>
-                                <td>
-                                    Notice For All 2081
-                                </td>
-                                <td>
-                                    09/07/2024
-                                </td>
-                                <td>
-                                    <a href="5123.html" target="_blank">View Full Notice</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    4
-                                </td>
-                                <td>
-                                    Notice For Quota Documents Submission 2081
-                                </td>
-                                <td>
-                                    09/07/2024
-                                </td>
-                                <td>
-                                    <a href="5124.html" target="_blank">View Full Notice</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    5
-                                </td>
-                                <td>
-                                    Notice For Foreigner Quota Documents Submission 2081
-                                </td>
-                                <td>
-                                    09/07/2024
-                                </td>
-                                <td>
-                                    <a href="5125.html" target="_blank">View Full Notice</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    6
-                                </td>
-                                <td>
-                                    BE BArch Booklet 2081
-                                </td>
-                                <td>
-                                    08/09/2024
-                                </td>
-                                <td>
-                                    <a href="4096.html" target="_blank">View Full Notice</a>
-                                </td>
-                            </tr>
-
+                                <tr>
+                                    <td>1</td>
+                                    <td>BE/BArch. Entrance Result 2081</td>
+                                    <td>09/07/2024</td>
+                                    <td><a href="5121.html" target="_blank">View Full Notice</a></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Result Foreign Students 2081</td>
+                                    <td>09/07/2024</td>
+                                    <td><a href="5122.html" target="_blank">View Full Notice</a></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Notice For All 2081</td>
+                                    <td>09/07/2024</td>
+                                    <td><a href="5123.html" target="_blank">View Full Notice</a></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Notice For Quota Documents Submission 2081</td>
+                                    <td>09/07/2024</td>
+                                    <td><a href="5124.html" target="_blank">View Full Notice</a></td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Notice For Foreigner Quota Documents Submission 2081</td>
+                                    <td>09/07/2024</td>
+                                    <td><a href="5125.html" target="_blank">View Full Notice</a></td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>BE BArch Booklet 2081</td>
+                                    <td>08/09/2024</td>
+                                    <td><a href="4096.html" target="_blank">View Full Notice</a></td>
+                                </tr>
                             </tbody>
                         </table>
-
+                    </div>
+                </div>
             </div>
-        </div>
-        </div>
-</form>
-
+        </form>
 
         <div id="footer" style="text-align: center;" class="non-printable">
-            <strong>Powered By:</strong>
-            <br>
+            <strong>Powered By:</strong><br>
             Institute of Engineering Pulchowk, Lalitpur<br>
-            P.O. Box: 1175, Kathmandu, Nepal Tel. 5424749
-            <br>
-            Email: entrance@ioe.edu.np
-            <br>
-            
+            P.O. Box: 1175, Kathmandu, Nepal Tel. 5424749<br>
+            Email: entrance@ioe.edu.np<br>
         </div>
     </div>
 </body>
