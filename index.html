@@ -1,16 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Entrance Examination Board</title>
 
-    <!-- CSS Links -->
-    <link href="css/base-jqueryui.css" rel="stylesheet">
-    <link href="css/bootstrap-bootstrapui.css" rel="stylesheet">
-    <link href="css/Flat-UI-flatui.css" rel="stylesheet">
-    <link href="css/styles-stylesui.css" rel="stylesheet">
-    <link href="css/styles-registration.css" rel="stylesheet">
+    <!-- Embedded CSS -->
+    <style>
+        @media print {
+            .status_info, .save_controls {
+                height: 1px;
+                visibility: hidden;
+            }
+        }
+
+        body {
+            background: #EBEBEB !important;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            color: #666;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .right {
+            float: right;
+        }
+
+        .left {
+            float: left;
+        }
+
+        img {
+            border: none;
+        }
+
+        ul,
+        li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        form {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            color: #0088B5;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: #0078A0;
+        }
+
+        #container {
+            width: 960px;
+            padding: 0;
+            -moz-border-radius: 13px;
+            background: #fff;
+            border: 1px solid #ccc;
+            overflow: hidden !important;
+            margin: 10px auto;
+            overflow: auto;
+        }
+
+        #content {
+            padding: 15px;
+            width: 930px;
+            overflow: auto;
+        }
+
+        #content h1,
+        #content h2,
+        #content h3,
+        #content h4 {
+            color: #008DBC;
+            font-size: medium;
+        }
+
+        #content h1 {
+            font-size: 22px;
+        }
+
+        #header {
+            background: #fff !important;
+            height: 120px;
+        }
+
+        .logo {
+            margin: 5px;
+            float: left;
+        }
+
+        ul#toplinks {
+            float: right;
+            color: #999;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        #nav {
+            padding-left: 20px;
+            background: #008DBC;
+            color: #fff;
+            clear: both;
+        }
+
+        #nav ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        #nav li {
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+        }
+
+        #nav li a {
+            padding: 8px 15px;
+            display: block;
+            color: #fff;
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+        #nav li a:hover {
+            background: #00779E;
+        }
+
+        #footer {
+            text-align: center;
+            margin: 10px auto 0 auto;
+            padding-bottom: 15px;
+            clear: both;
+            background: #008DBC !important;
+            color: #fff !important;
+        }
+
+        ul#promobox {
+            width: 930px;
+            position: relative;
+            float: left;
+            margin-left: 15px;
+            margin-bottom: 45px;
+            margin-top: 30px;
+        }
+
+        ul#promobox li {
+            width: 270px;
+            padding: 20px 10px 20px 20px;
+            float: left;
+            background: #008DBC;
+            margin: 15px 15px 0 0;
+            -moz-border-radius: 10px;
+            color: #fff;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+        }
+
+        ul#promobox li.two {
+            background: #00ACE6;
+        }
+
+        ul#promobox li.three {
+            margin-right: 0;
+            background: #09C1FF;
+        }
+
+        ul#promobox h3 {
+            line-height: 1;
+            color: #fff;
+            letter-spacing: -1px;
+            font-size: 25px;
+            float: left;
+            margin: 0;
+            padding: 0 0 3px 0;
+        }
+
+        ul#promobox button,
+        ul#promobox a {
+            background: #004055;
+            color: #fff;
+            float: left;
+            margin: 15px 10px 0 0;
+            padding: 5px 10px;
+            text-decoration: none;
+            -moz-border-radius: 5px;
+            font-weight: normal;
+        }
+
+        ul#promobox a:hover,
+        ul#promobox button:hover {
+            background: #005773;
+        }
+
+        .panel-primary {
+            border-color: #0078A0;
+        }
+
+        .panel-primary>.panel-heading {
+            background-color: #0078A0;
+            border-color: #0078A0;
+        }
+
+        .panel-title {
+            color: white;
+            font-size: 18px;
+        }
+
+        .table-bordered {
+            border: 1px solid #ddd;
+        }
+
+        .table-bordered>tbody>tr>td {
+            border: 1px solid #ddd;
+        }
+
+        .alert-info {
+            background-color: #d9edf7;
+            border-color: #bce8f1;
+        }
+
+        /* Button Styles */
+        .btn-primary {
+            background-color: #004055;
+            border-color: #004055;
+            color: #fff;
+        }
+
+        .btn-primary:hover {
+            background-color: #005773;
+            border-color: #005773;
+        }
+
+        #logo_text {
+            float: left;
+            width: 500px;
+            margin: 22px 0 0 0;
+        }
+
+        #logo_text h3 {
+            font-size: 18px;
+            line-height: 20px;
+            margin: 0;
+            padding: 3px;
+            color: #008DBC;
+        }
+    </style>
 
     <!-- JavaScript Links -->
     <script src="/bundles/jquery.js"></script>
@@ -27,6 +273,7 @@
         });
     </script>
 </head>
+
 <body>
     <div id="container">
         <div id="header">
@@ -93,67 +340,21 @@
                         <h2 class="panel-title">Recent Notices</h2>
                     </div>
                     <div class="panel-body">
-                        (<a href="Notice.html">View All Notices</a>)
-                        <hr>
-                        <table class="table table-bordered">
-                            <thead>
-                                <tr>
-                                    <th>S.No.</th>
-                                    <th>Title</th>
-                                    <th>Published Date</th>
-                                    <th></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>BE/BArch. Entrance Result 2081</td>
-                                    <td>09/07/2024</td>
-                                    <td><a href="5121.html" target="_blank">View Full Notice</a></td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Result Foreign Students 2081</td>
-                                    <td>09/07/2024</td>
-                                    <td><a href="5122.html" target="_blank">View Full Notice</a></td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>Notice For All 2081</td>
-                                    <td>09/07/2024</td>
-                                    <td><a href="5123.html" target="_blank">View Full Notice</a></td>
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td>Notice For Quota Documents Submission 2081</td>
-                                    <td>09/07/2024</td>
-                                    <td><a href="5124.html" target="_blank">View Full Notice</a></td>
-                                </tr>
-                                <tr>
-                                    <td>5</td>
-                                    <td>Notice For Foreigner Quota Documents Submission 2081</td>
-                                    <td>09/07/2024</td>
-                                    <td><a href="5125.html" target="_blank">View Full Notice</a></td>
-                                </tr>
-                                <tr>
-                                    <td>6</td>
-                                    <td>BE BArch Booklet 2081</td>
-                                    <td>08/09/2024</td>
-                                    <td><a href="4096.html" target="_blank">View Full Notice</a></td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <ul>
+                            <li>New Registration date announced for 2081.</li>
+                            <li>Exam center locations are updated.</li>
+                            <li>Instructions for the examination day are posted.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
+
         </form>
 
-        <div id="footer" style="text-align: center;" class="non-printable">
-            <strong>Powered By:</strong><br>
-            Institute of Engineering Pulchowk, Lalitpur<br>
-            P.O. Box: 1175, Kathmandu, Nepal Tel. 5424749<br>
-            Email: entrance@ioe.edu.np<br>
+        <div id="footer">
+            <p>&copy; 2081 Tribhuvan University - Institute of Engineering, Entrance Examination Board</p>
         </div>
     </div>
 </body>
+
 </html>
